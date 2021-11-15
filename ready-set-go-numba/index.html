@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ready, Set, Go! Getting Started with Numba - Ankit Mahato</title>
+    <link rel="icon" href="/media/favicon.ico">
+    <link rel="shortcut icon" href="/media/favicon.ico"/>
+    <meta name="author" content="Ankit Mahato">
+    <meta name="keywords" content="python,analytics,real,world,guide,book,programming,code,machine learning,ai,model">
+    <meta name="description" content="Ready, Set, Go! A Numba Getting Started Guide by Ankit Mahato.">
+    <meta property="og:title" content="Ready, Set, Go! Getting Started with Numba - Ankit Mahato">
+    <meta property="og:description" content="Ready, Set, Go! A Numba Getting Started Guide by Ankit Mahato.">
+    <meta property="og:image" content="https://realworldpython.github.io/media/banners/ready-set-go-banner.png">
+    <meta property="og:url" content="https://realworldpython.github.io/ready-set-go-numba/">
+    <meta name="twitter:title" content="Ready, Set, Go! Getting Started with Numba - Ankit Mahato">
+    <meta name="twitter:description" content="Ready, Set, Go! A Numba Getting Started Guide by Ankit Mahato.">
+    <meta name="twitter:image" content="https://realworldpython.github.io/media/banners/ready-set-go-banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/main-page.css" rel="stylesheet">
+
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "3yg904v6dz");
+    </script>
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162081281-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-162081281-1');
+    </script>
+    <!-- End Google Analytics -->
+
+  </head>
+  <body>
+
+    <header>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="navbar-brand">
+            <a href="/"><img src="/media/icon.png" style="height: 2rem;"></a>
+          </div>
+          <div class="navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="navbar-item"><a class="nav-link" href="https://gitter.im/realworldpython/community" target="_blank">Community</a></li>
+              <li class="navbar-item"><a class="nav-link" href="https://gitter.im/realworldpython/issues" target="_blank">Report Bug</a></li>
+              <li class="navbar-item"><a class="nav-link" href="https://twitter.com/realworldpython" target="_blank">Twitter</a></li>
+              <li class="navbar-item"><a class="nav-link" href="https://www.youtube.com/channel/UCjelPfbgHVIbODdZtX0Y8lw/" target="_blank">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="hero position-relative overflow-hidden text-center text-light">
+      <div class="col-md-6 p-lg-1 mx-auto my-1">
+        <a href="/"><img class="img-fluid" src="/media/hero_banner.png" style="max-width: 100%; height: 100px;"></a>
+		  <p class="lead font-weight-normal">
+        Learn to tackle real world problems using Python like a rockstar 🤘
+      </p>
+        <a class="btn solid-rwp btn-lg m-1" href="https://twitter.com/realworldpython" target="_blank"><i class="fab fa-twitter"></i> Follow @realworldpython</a>
+      </div>
+    </div>
+
+
+    <main role="main">
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing p-md-5">
+        <h2 class="featurette-heading mt-2">Ready, Set, Go!</h2>
+        <h2 class="featurette-subheading mt-2">Getting Started with Numba</h2>
+
+        <h4 class="mt-2">Requirements</h4>
+        <p>Install the following dependencies using <code>pip3</code> command:</p>
+        <div class="px-2 pt-2 border bg-light mb-2">
+            <pre><code>$ pip3 install numba Pillow</code></pre>
+        </div>
+        <p><code>Tk</code> comes pre-installed with Python and
+          <code>numpy</code> is installed during the <code>numba</code> installation in case it is not available.</p>
+
+        <h4 class="mt-2">Introduction</h4>
+        <p>To get started with <code>numba</code>, we will compute the Mandelbrot Set, a set of points on the complex plane
+          which always remain bounded by a threshold value while solving the quadratic recurrence equation.
+          It is an iterative problem which is also compute intensive and visual in nature.
+          This makes it a good starting point for new <code>numba</code> users to witness the various ways
+          in which one can achieve code speed-up using <code>numba</code>.</p>
+          <p>This Mandelbrot Set Generator is built using the <code>Tcl/Tk</code> cross-platform UI framework
+            which comes pre-packaged with the python.
+            UI layer (which includes advanced feature such as Zooming) and computational layer are separated for better understanding.
+          </p>
+          <p><a class="btn btn-dark" role="button" target="_blank" href="https://github.com/animator/mandelbrot-numba/"><i class="fab fa-github"></i> Project Repository</a></p>
+        <p> Brief description of various parts of the code are provided below:
+          <ul>
+            <li>Requisite libraries are imported along with the <code>view_mandelbrot()</code> function
+              from <code>canvas.py</code> (UI Layer) which is responsible for rendering the Mandelbrot Set.</li>
+            <li>The domain size is set as a 600x600 grid and the maximum number of iterations for each point on this grid is limited to 1000 (6000 for parallel codes).</li>
+            <li><code>mandelbrot()</code> function is used to evaluate the Mandelbrot Set.
+              It returns the RBG color of each point on the grid (complex plane) as a nested list of tuples or a NumPy array.</li>
+          </ul>
+        </p>
+
+        <p>Check out the video demo below:</p>
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-6">
+              <div class="ratio ratio-1x1 mt-2 mb-2">
+                  <iframe src="https://www.youtube.com/embed/67WfNSeJ9y4" allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+
+        <h4 class="mt-2">Video Tutorial</h4>
+        <div class="ratio ratio-16x9 mt-1">
+          <iframe src="https://www.youtube.com/embed/vbNnKJ3F6tc" allowfullscreen></iframe>
+        </div>
+
+        <h4 class="mt-4">Source Code</h4>
+        <p>To get started with the exercise, simple clone the <a class="btn btn-dark" role="button" target="_blank" href="https://github.com/animator/mandelbrot-numba/"><i class="fab fa-github"></i> GitHub Repository</a>
+        <p>Each implementation has a dedicated file and the recommended learning sequence that should be followed is provided below:</p>
+
+        <table class="table table-striped">
+        <thead>
+        <tr>
+        <th>File Name</th>
+        <th>Data Layer</th>
+        <th>Description</th>
+        <th><code>parallel</code> Execution</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>01-python-list.py</td>
+        <td><code>list</code></td>
+        <td>Pure Python implementation where a <code>list</code> of <code>list</code> of RBG tuples is used to store the computed RBG pixel values.</td>
+        <td>-</td>
+        </tr>
+        <tr>
+        <td>02-njit-python-list.py</td>
+        <td><code>list</code></td>
+        <td><code>@numba.njit</code> is applied on the pure Python implementation.</td>
+        <td>-</td>
+        </tr>
+        <tr>
+        <td>03-njit-parallel-python-list.py</td>
+        <td><code>list</code></td>
+        <td><code>@numba.njit</code> is applied on the pure Python implementation along with explicit <code>for</code> loop parallelization using <code>numba.prange()</code>.</td>
+        <td>Yes</td>
+        </tr>
+        <tr>
+        <td>04-numpy-array.py</td>
+        <td>NumPy array</td>
+        <td>Implementation where a 3-dimensional <code>numpy array</code> is used to store the computed RBG pixel values.</td>
+        <td>-</td>
+        </tr>
+        <tr>
+        <td>05-njit-numpy-array.py</td>
+        <td>NumPy array</td>
+        <td><code>@numba.njit</code> is applied on the NumPy implementation.</td>
+        <td>-</td>
+        </tr>
+        <tr>
+        <td>06-njit-parallel-numpy-array.py</td>
+        <td>NumPy array</td>
+        <td><code>@numba.njit</code> is applied on the NumPy implementation.
+          Numpy is primarily designed to be as fast as possible on a single core,
+          whereas numba automatically compiles a version which can run in parallel utilizing multiple threads if it contains reduction functions,
+          array math functions and many more functions or assignments or operations.
+          Explicit <code>for</code> loop parallelization is also performed using <code>numba.prange()</code></td>
+        <td>Yes</td>
+        </tr>
+        <tr>
+        <td>07-numpy-vectorize.py</td>
+        <td>NumPy array</td>
+        <td><code>@numpy.vectorize</code> creates a vectorized function which uses broadcasting rules instead of <code>for</code> loops.
+          Although users can write vectorized functions in Python, it is mostly for convenience and is neither optimal nor efficient.</td>
+        <td>-</td>
+        </tr>
+        <tr>
+        <td>08-numba-vectorize.py</td>
+        <td>NumPy array</td>
+        <td><code>@numba.vectorize</code> creates a NumPy <code>ufunc</code> from a Python function as compared to writing C code if using the NumPy API.
+          A <code>ufunc</code> uses broadcasting rules instead of nested <code>for</code> loops.</td>
+        <td>-</td>
+        </tr>
+        <tr>
+        <td>09-parallel-numba-vectorize.py</td>
+        <td>NumPy array</td>
+        <td><code>@numba.vectorize</code> also has the option to create a <code>ufunc</code> which executes in parallel.</td>
+        <td>Yes</td>
+        </tr>
+        </tbody>
+        </table>
+        <p>To execute the code just run:</p>
+        <div class="px-2 pt-2 border bg-light mb-2">
+            <pre><code>$ python3 <i>filename</i>.py</code></pre>
+        </div>
+        <p>A Tkinter GUI will pop-up. You can use <code>left</code> mouse button to drag and select an area to zoom into. <code>Right</code> click to reset the canvas.</p>
+
+      </div>
+
+      <hr class="featurette-divider"></hr>
+        <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <div class="row footer-row">
+          <p>Copyright &copy; 2020 Real World Python</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAzRLkpyoSM-xq7fh0uOETvH0emoMV5Hio",
+        authDomain: "realworldpython-61408.firebaseapp.com",
+        databaseURL: "https://realworldpython-61408.firebaseio.com",
+        projectId: "realworldpython-61408",
+        storageBucket: "realworldpython-61408.appspot.com",
+        messagingSenderId: "284668353956",
+        appId: "1:284668353956:web:0fb13fda22d8a3282d3531",
+        measurementId: "G-YTX7ESG1N0"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
+</html>

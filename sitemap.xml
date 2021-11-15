@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://realworldpython.github.io/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/ready-set-go-numba/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/pycon-sweden-2020/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/geopython-pyml-2020/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/pycon-india-2019-real-world-numba/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/pycon-estonia-2020/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/pycon-estonia-streamlit/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/geopython-pyml-2020-numba/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/.</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/pfa/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/status/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/about/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/installation/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/elementary-example/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/using-built-in-functions/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/pfa-document-structure/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/persistent-storage/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/prettypfa-examples/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/exoplanets/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/contribute/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/pfa/what-is-pfa/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/pfa/why-do-we-need-pfa/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/pfa/document-structure/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/pfa/locator-marks/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/pfa/names/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/pfa/cell-pool-structure/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/pfa/expressions/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/avro-types/inherited-type-system/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/avro-types/type-specification/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/avro-types/subtypes-supertypes/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/avro-types/function-signatures/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/special-forms/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/special-forms/call-functions/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/special-forms/function-references/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/special-forms/complex-objects/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/special-forms/symbol-assignment/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/special-forms/arrays-maps-records/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/special-forms/cells-pools/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/special-forms/control-structures/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/special-forms/loops/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/special-forms/type-safe-casting/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/special-forms/misc/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/core/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/math/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/linear-algebra/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/metric/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/random-number/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/string-manipulation/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/regex/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/parsing/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/casting/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/array/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/map/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/bytes/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/other-ds/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/date-time/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/impute/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/interpolation/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/prob/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/descriptive-stats/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/function-library/data-mining/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/elementary-example/elementary-example.ipynb</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/using-built-in-functions/using-built-in-functions.ipynb</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/pfa-document-structure/pfa-document-structure.ipynb</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/persistent-storage/persistent-storage.ipynb</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/prettypfa-examples/prettypfa-examples.ipynb</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/tutorials/exoplanets/exoplanets.ipynb</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://realworldpython.github.io/titus2/avro-types/document-structure/</loc>
+  <lastmod>2021-11-16</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

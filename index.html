@@ -1,7 +1,396 @@
-<!DOCTYPE html>
-<html>
-  <meta http-equiv="refresh" content="0; URL='https://realworldpython.guide/'" />
-<body>
-  <p>You are being redirected to <a href="https://realworldpython.guide">realworldpython.guide</a></p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Real World Python - Ankit Mahato</title>
+    <link rel="icon" href="/media/favicon.ico">
+    <link rel="shortcut icon" href="/media/favicon.ico"/>
+    <meta name="author" content="Ankit Mahato">
+    <meta name="keywords" content="python,analytics,real,world,guide,book,programming,code,machine learning,ai,model">
+    <meta name="description" content="Real World Python is a guide to tackle real world problems using Python by Ankit Mahato">
+    <meta property="og:title" content="Real World Python">
+    <meta property="og:description" content="A guide to tackle real world problems using Python.">
+    <meta property="og:image" content="https://realworldpython.github.io/media/banners/banner.png">
+    <meta property="og:url" content="https://realworldpython.github.io/">
+    <meta name="twitter:title" content="Real World Python">
+    <meta name="twitter:description" content="A guide to tackle real world problems using Python.">
+    <meta name="twitter:image" content="https://realworldpython.github.io/media/banners/banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/main-page.css" rel="stylesheet">
+
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "3yg904v6dz");
+    </script>
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-162081281-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-162081281-1');
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAzRLkpyoSM-xq7fh0uOETvH0emoMV5Hio",
+        authDomain: "realworldpython-61408.firebaseapp.com",
+        databaseURL: "https://realworldpython-61408.firebaseio.com",
+        projectId: "realworldpython-61408",
+        storageBucket: "realworldpython-61408.appspot.com",
+        messagingSenderId: "284668353956",
+        appId: "1:284668353956:web:0fb13fda22d8a3282d3531",
+        measurementId: "G-YTX7ESG1N0"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+    <script>
+      var sendEvent = function(category, url) {
+        var link = url;
+
+        function openLink() {
+          document.location = link;
+        }
+
+        setTimeout(openLink, 300);
+
+        gtag('event', 'click', {
+          'event_category': category,
+          'event_label': url,
+          'transport_type': 'beacon',
+          'event_callback': openLink
+        });
+      }
+    </script>
+
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="navbar-brand">
+            <a href="/" onclick="sendEvent('navbar', '/'); return false;"><img src="/media/icon.png" style="height: 2rem;"></a>
+          </div>
+          <div class="navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="navbar-item">
+                <a  class="nav-link" href="https://gitter.im/realworldpython/community"
+                    onclick="sendEvent('navbar', 'https://gitter.im/realworldpython/community'); return false;"
+                    target="_blank">Community</a>
+              </li>
+              <li class="navbar-item">
+                <a  class="nav-link" href="https://gitter.im/realworldpython/issues"
+                    onclick="sendEvent('navbar', 'https://gitter.im/realworldpython/issues'); return false;"
+                    target="_blank">Report Bug</a>
+              </li>
+              <li class="navbar-item">
+                <a  class="nav-link" href="https://twitter.com/realworldpython"
+                    onclick="sendEvent('navbar', 'https://twitter.com/realworldpython'); return false;"
+                    target="_blank">Twitter</a>
+              </li>
+              <li class="navbar-item">
+                <a  class="nav-link" href="https://www.youtube.com/channel/UCjelPfbgHVIbODdZtX0Y8lw/"
+                    onclick="sendEvent('navbar', 'https://www.youtube.com/channel/UCjelPfbgHVIbODdZtX0Y8lw/'); return false;"
+                    target="_blank">Youtube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <div class="hero position-relative overflow-hidden text-center text-light">
+        <div class="col-md-6 p-lg-1 mx-auto my-1">
+          <a href="/"><img class="img-fluid" src="/media/hero_banner.png" style="max-width: 100%; height: 100px;"></a>
+        <p class="lead font-weight-normal">
+          Learn to tackle real world problems using Python like a rockstar 🤘
+        </p>
+          <a  class="btn solid-rwp btn-lg m-1" href="https://twitter.com/realworldpython"
+              onclick="sendEvent('jumbotron', 'https://twitter.com/realworldpython'); return false;"
+              target="_blank"><i class="fab fa-twitter"></i> Follow @realworldpython</a>
+        </div>
+      </div>
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing p-md-5">
+        <h2 class="featurette-heading mt-2">Articles</h2>
+        <div class="row mt-5 pb-4">
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/banners/ready-set-go-banner.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Ready, Set, Go!</h5>
+                <p class="card-text">An interactive guide to get started with numba.</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="https://articles.realworldpython.github.io/ready-set-go-getting-started-with-numba" role="button" target="_blank">Read &raquo;</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1612690277381/Z_3LdiiBp.jpeg?w=400&h=225&fit=crop" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">pandas.read_csv()</h5>
+                <p class="card-text">3 Solid Reasons Why You Should Use pandas.read_csv()</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="https://articles.realworldpython.github.io/3-solid-reasons-why-you-should-use-pandasreadcsv" role="button" target="_blank">Read &raquo;</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1612846062157/fsep57nyz.jpeg?w=400&h=225&fit=crop" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">PEP 634</h5>
+                <p class="card-text">Structural Pattern Matching (PEP 634) in Python</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="https://articles.realworldpython.github.io/structural-pattern-matching-pep-634-in-python" role="button" target="_blank">Read &raquo;</a>
+                </p>
+              </div>
+            </div>
+          </div>          
+        </div>
+
+        <h2 class="featurette-heading mt-2">Projects</h2>
+        <div class="row mt-5">
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/blurhash.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">blurhash-numba</h5>
+                <p class="card-text">Fastest BlurHash implementation for Python 3</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="https://github.com/animator/blurhash-numba" role="button" target="_blank">Read More &raquo;</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/pfatoeverything.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">titus2</h5>
+                <p class="card-text">Portable Format for Analytics (PFA) implementation for Python 3.4+</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="/titus2/" role="button" target="_blank">Documentation &raquo;</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/orange3scoring.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">orange3-scoring</h5>
+                <p class="card-text">🍊🎯 Score PMML and PFA models in Orange3</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="https://github.com/animator/orange3-scoring" role="button" target="_blank">Read More &raquo;</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+        <h2 class="featurette-heading mt-2">Featured Talks</h2>
+        <div class="row mt-5">
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/pyjamas.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Pyjamas Conf 2020</h5>
+                <p class="card-text">Supercharge Your Python Code with Numba</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="https://www.youtube.com/watch?v=vbNnKJ3F6tc" role="button" target="_blank">Video &raquo;</a>
+                </p>
+                <p class="card-text"><small class="text-muted">Talk</small></p>
+              </div>
+            </div>
+          </div>          
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/pycon-sweden.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">PyData Global, PyCon Sweden & PyDay BCN 2020</h5>
+                <p class="card-text">Accelerating Scientific Computing using Numba</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="https://www.youtube.com/watch?v=0iMGXiyKXwE" role="button" target="_blank">Video &raquo;</a>
+                </p>
+                <p class="card-text"><small class="text-muted">Talk</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/pyml-talk.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">GeoPython & PyML 2020</h5>
+                <p class="card-text">Democratizing Machine Learning Model Development</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="/geopython-pyml-2020/" role="button">Video & Slides &raquo;</a>
+                </p>
+                <p class="card-text"><small class="text-muted">Talk</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/pycon-india.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">PyCon India 2019</h5>
+                <p class="card-text">Real World Numba: Taking the Path of Least Resistance</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="https://www.youtube.com/watch?v=rhbegsr8stc" role="button"  target="_blank">Video &raquo;</a>
+                </p>
+                <p class="card-text"><small class="text-muted">Talk</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="featurette-heading mt-2">Other Talks / Workshops</h2>
+        <div class="row mt-5">
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/pycon-estonia-talk.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">PyCon Estonia 2020</h5>
+                <p class="card-text">Supercharging Python with Numba</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="/pycon-estonia-2020/" role="button">Slides &raquo;</a>
+                </p>
+                <p class="card-text"><small class="text-muted">Talk</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/pycon-estonia-streamlit.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">PyCon Estonia 2020</h5>
+                <p class="card-text">Deploying Python Apps on Streamlit</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="/pycon-estonia-streamlit/" role="button">Slides &raquo;</a>
+                </p>
+                <p class="card-text"><small class="text-muted">Lightning Talk</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/pyml-numba.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">GeoPython & PyML 2020</h5>
+                <p class="card-text">An Enlightening Talk on Numba</p>
+                <p>
+                  <a class="btn btn-dark stretched-link" href="/geopython-pyml-2020-numba/" role="button">Slides &raquo;</a>
+                </p>
+                <p class="card-text"><small class="text-muted">Lightning Talk</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/scipy19.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">SciPy India 2019</h5>
+                <p class="card-text">Accelerating Data Science & Scientific Computing in Python using Numba</p>
+                <p class="card-text"><small class="text-muted">Workshop</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/mledge.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">PyCon India 2019 & <br/>SciPy India 2018 </h5>
+                <p class="card-text">Deploying Machine Learning Models at the Edge</p>
+                <p class="card-text"><small class="text-muted">Workshop</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/scipy17.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">SciPy India 2017</h5>
+                <p class="card-text">Scientific Computing using Orange</p>
+                <p class="card-text"><small class="text-muted">Workshop</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="/media/thumbs/pycon-india17.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">PyCon India 2017</h5>
+                <p class="card-text">Making Machine Learning Fruitful & Fun Using Orange</p>
+                <p class="card-text"><small class="text-muted">Workshop</small></p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+        <hr class="featurette-divider"></hr>
+        <h2 class="featurette-heading">Ankit Mahato</h2>
+        <div class="row featurette mt-5">
+          <div class="col-sm-4">
+            <img src="/media/author.png" class="img-fluid">
+          </div>
+          <div class="col-sm-8">
+            <p class="lead">I am a die hard Pythonista, an open source contributor and a former GSoC scholar under Python Software Foundation. With more than 8 years of industrial and research experience in scientific computing, machine learning and data visualization, I have developed an expertise in handling the entire data analytics pipeline comprising – ingestion, exploration, transformation, modeling and deployment.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider"></hr>
+        <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <div class="row footer-row">
+          <p>Copyright &copy; 2020 Real World Python</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+
+  </body>
 </html>
